@@ -1,0 +1,1 @@
+Mini Message Board project from  [The Odin Project](https://www.theodinproject.com/lessons/node-path-nodejs-mini-message-board/project_submissions)
