@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messages</title>
+</head>
+<body>
+<h1>Message board</h1>
+<h2>User messages:</h2>
+
+<a href="/new">Add message</a>
+
+<% messages.map((message) => { %>
+    <div>
+        <h3>
+            <%= message.user %>
+        </h3>
+        <p>
+            <%= message.text %>
+        </p>
+        <p>
+            <%= message.added %>
+        </p>
+
+        <a href='/message/<%= message.id %>'>Open</a>
+    </div>
+
+<% }) %>
+
+</body>
+</html>
