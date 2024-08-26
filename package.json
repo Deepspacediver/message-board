@@ -7,6 +7,7 @@
     "pg": "^8.12.0"
   },
   "scripts": {
-    "start": "node db/populatedb.js && node --watch app.js"
+    "start": "node db/populatedb.js && node app.js",
+    "dev": "node db/populatedb.js && node --watch app.js"
   }
 }
