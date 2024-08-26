@@ -1,5 +1,4 @@
 const {Router} = require('express');
-const {messages} = require('../routes/index');
 const messageFormController = require('../controllers/message-controller');
 
 const formRouter = Router();
